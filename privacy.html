@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy Policy — gws CLI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;max-width:720px;margin:4rem auto;padding:0 1rem;line-height:1.7;color:#222}
+h1,h2{font-weight:600}
+h1{margin-bottom:0.25rem}
+.small{color:#666;font-size:0.9rem}
+code{background:#f3f3f3;padding:0.1rem 0.3rem;border-radius:3px;font-size:0.9em}
+a{color:#0969da}
+ul{padding-left:1.5rem}
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="small">gws CLI (personal OAuth client) · Last updated: 2026-10-08</p>
+
+<p>
+This OAuth client is a personal command-line tool used solely by the
+project owner to access their own Google account data. It is not
+distributed, not offered as a service, and has no third-party users.
+</p>
+
+<h2>Data accessed</h2>
+<ul>
+<li>Gmail (<code>gmail.modify</code>, <code>gmail.settings.basic</code>)</li>
+<li>Google Drive (<code>drive</code>)</li>
+<li>Google Calendar (<code>calendar</code>)</li>
+<li>Google Sheets (<code>spreadsheets</code>)</li>
+<li>Basic profile and email address (<code>openid</code>, <code>userinfo.email</code>, <code>userinfo.profile</code>)</li>
+</ul>
+
+<h2>How data is used and stored</h2>
+<ul>
+<li>All data stays on the owner's local machine.</li>
+<li>Nothing is sent to third parties, external servers, or logged beyond local tool output.</li>
+<li>OAuth refresh tokens are stored encrypted on the owner's local machine
+(<code>~/.config/gws-*/credentials.enc</code>, AES-256-GCM with the key held in the OS keychain).</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>No data is shared with anyone. No analytics, no telemetry, no third-party integrations
+besides Google's own APIs invoked on the owner's behalf.</p>
+
+<h2>Retention and deletion</h2>
+<p>Data is read on demand; nothing is retained beyond command output and local shell history.
+The owner can revoke access at any time at
+<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>
+or by deleting <code>~/.config/gws-*/credentials.enc</code>.</p>
+
+<h2>Contact</h2>
+<p>ryangsige0711@gmail.com</p>
+
+<p><a href="/">← home</a></p>
+</body>
+</html>
